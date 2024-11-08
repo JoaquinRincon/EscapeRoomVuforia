@@ -60,7 +60,9 @@ VuforiaEscapeRoom/*.apk
 VuforiaEscapeRoom/*.aab
 VuforiaEscapeRoom/*.unitypackage
 VuforiaEscapeRoom/*.app
-
+VuforiaEscapeRoom/*.tgz
+VuforiaEscapeRoom/Packages/*.tgz
+VuforiaEscapeRoom/Assets/Editor/Migration/*.tgz
 # Crashlytics generated file
 VuforiaEscapeRoom/crashlytics-build.properties
 
