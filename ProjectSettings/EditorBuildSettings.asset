@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AR.unity
     guid: 3328fb3345534f146bd6f017404f6e37
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: f0de69c03188214478d5cbeefb9b2cb7
   m_configObjects: {}
