@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
 {
@@ -10,6 +7,7 @@ public class MainMenu : MonoBehaviour
     public void Comenzar()
     {
         SceneManager.LoadScene("AR", LoadSceneMode.Single);
+        Destroy(this);
     }
 
     public void Informacion()
@@ -22,6 +20,13 @@ public class MainMenu : MonoBehaviour
     public void Creditos()
     {
         SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
+        Destroy(this);
+    }
+
+    public void Volver()
+    {
+        SceneManager.LoadScene("Inicio", LoadSceneMode.Single);
+        Destroy(this);
     }
 
     public void Salir()
