@@ -694,8 +694,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Esta Aplicaci\xF3n ha sido creada por 2 estudiantes usando recursos en
-    Internet sin animo de lucro.\n\nDesarrolladores:\n\nJoaqu\xEDn Hern\xE1ndez Torres.\nCarlos "
+  m_text: "Esta aplicaci\xF3n ha sido creada por 2 estudiantes usando recursos en
+    Internet sin animo de lucro.\n\nDesarrolladores:\n\nJoaqu\xEDn Hern\xE1ndez Torres.\nCarlos
+    Su\xE1rez Rodr\xEDguez"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1037,9 +1038,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Buenas gracias por descargar la aplicac\xF3n, esta aplicaci\xF3n esta
-    dise\xF1ada para ser usada en un entorno controlado bajo I.E.S EL RINCON con
-    sus respectivos materiales, en caso de no ser asi por favor desistale la aplicaci\xF3n."
+  m_text: "Muchas gracias por descargar la aplicaci\xF3n, esta est\xE1 dise\xF1ada
+    para ser usada en un entorno controlado bajo I.E.S EL RINC\xD3N con sus respectivos
+    materiales, en caso de no ser as\xED por favor desinstale la aplicaci\xF3n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
