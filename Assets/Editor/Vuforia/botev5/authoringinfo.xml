@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QCARInfo>
+    <TargetSet version="36.0" toolVersion="v7.1.0">
+        <ModelTarget name="botev5" targetId="6b384b44f74c4103b227b7ce3e5214f0" version="14.0" toolVersion="v7.1.0" bbox="-0.027955 0.017879 -0.019865 0.005588 0.068156 0.011199" trackingMode="scan" upVector="0.0 1.0 0.0" optimizeTrackingFor="default" realisticTextures="yes" />
+    </TargetSet>
+    <Assembly name="botev5" assemblyId="3301958fd0f5450a8f46337b163a6e52">
+        <Part name="botev5" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+</QCARInfo>
