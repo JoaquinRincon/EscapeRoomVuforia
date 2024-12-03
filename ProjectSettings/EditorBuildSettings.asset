@@ -15,5 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Creditos.unity
     guid: f0de69c03188214478d5cbeefb9b2cb7
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: e2100fc9ceb1423418d8f816f74c7f11,
+      type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 8329127fbec3e9541b8444949b667a2b, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 87bdfdd3d07881b4992cbacc02c03e7f,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f05139408f09b3745b9903157f476435,
+      type: 2}
