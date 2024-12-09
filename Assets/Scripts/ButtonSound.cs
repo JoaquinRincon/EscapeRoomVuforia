@@ -1,18 +1,32 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class ButtonSound : MonoBehaviour
 {
-    public AudioSource audioSource; // Referencia al componente AudioSource
+    public AudioClip clickSound; // Sonido que se reproducirá
+    private AudioSource audioSource;
 
-    public void PlaySound()
+    private void Awake()
     {
-        if (audioSource != null)
+        // Busca el AudioSource en este objeto
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
         {
-            audioSource.Play();
+            Debug.LogError("AudioSource no encontrado en " + gameObject.name);
         }
-        else
+
+        // Agrega un evento a todos los botones
+        Button[] buttons = FindObjectsOfType<Button>();
+        foreach (Button button in buttons)
         {
-            Debug.LogWarning("No se ha asignado un AudioSource.");
+            button.onClick.AddListener(() => PlayClickSound());
+        }
+    }
+
+    public void PlayClickSound()
+    {
+        if (audioSource != null && clickSound != null)
+        {
+            audioSource.PlayOneShot(clickSound);
         }
     }
 }

@@ -3,30 +3,38 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject panel;
+    [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject mainPanel;
     public void Comenzar()
     {
         SceneManager.LoadScene("AR", LoadSceneMode.Single);
-        Destroy(this);
     }
 
     public void Informacion()
     {
         panel.SetActive(true);
+        mainPanel.SetActive(false);
     }
 
-    public void Cerrar() {  panel.SetActive(false); }
+    public void Cerrar() {  panel.SetActive(false); mainPanel.SetActive(true); }
 
     public void Creditos()
     {
-        SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
-        Destroy(this);
+        SceneManager.LoadScene("Creditos", LoadSceneMode.Additive);
     }
 
     public void Volver()
     {
+        SceneManager.UnloadSceneAsync(gameObject.scene.buildIndex);
+        mainPanel.SetActive(true);
+    }
+    
+    public void Descargar(){
         SceneManager.LoadScene("Inicio", LoadSceneMode.Single);
-        Destroy(this);
+    }
+    
+    public void Configuracion(){
+        SceneManager.LoadScene("Configuracion", LoadSceneMode.Single);
     }
 
     public void Salir()
