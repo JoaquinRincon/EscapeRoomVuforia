@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
@@ -19,30 +21,41 @@ using UnityEngine.XR.ARSubsystems;
 /// </summary>
 [HelpURL("https://youtu.be/HkNVp04GOEI")]
 public class PlaceMultipleObjectsOnPlaneOldInputSystem : MonoBehaviour {
+    
     public GameObject placedObjectPrefab;
     private GameObject spawnedObject;
     private ARRaycastManager raycastManager;
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
-    void Awake() {
+
+    void Awake()
+    {
         raycastManager = GetComponent<ARRaycastManager>();
     }
 
-    void Update() {
+    void Update()
+    {
         // Detectar el plano y colocar el objeto
-        if (spawnedObject == null && raycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hits, TrackableType.PlaneWithinBounds)) {
+        if (spawnedObject == null && raycastManager.Raycast(new Vector2(Screen.width / 2, Screen.height / 2), hits, TrackableType.PlaneWithinBounds))
+        {
             Pose hitPose = hits[0].pose;
             spawnedObject = Instantiate(placedObjectPrefab, hitPose.position, hitPose.rotation);
         }
-
+        
         // Detectar toque en el objeto
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
             Touch touch = Input.GetTouch(0);
             Ray ray = Camera.main.ScreenPointToRay(touch.position);
-            if (Physics.Raycast(ray, out RaycastHit hit)) {
-                if (hit.transform.gameObject == spawnedObject) {
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                if (hit.transform.gameObject == spawnedObject)
+                {
+
+
                     Destroy(spawnedObject);
                     spawnedObject = null; // Reiniciar la referencia
+                    
                 }
             }
         }
