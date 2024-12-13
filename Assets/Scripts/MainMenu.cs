@@ -23,6 +23,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Creditos", LoadSceneMode.Additive);
     }
 
+    public void ArInter()
+    {
+        SceneManager.LoadScene("XR", LoadSceneMode.Single);
+    }
+    
     public void Volver()
     {
         SceneManager.UnloadSceneAsync(gameObject.scene.buildIndex);

@@ -142,14 +142,8 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 1.0.3
-  preloadedAssets:
-  - {fileID: 11400000, guid: 19059b1413a7ccf4089de0c06ff730e3, type: 2}
-  - {fileID: 4682843669530068195, guid: f05139408f09b3745b9903157f476435, type: 2}
-  - {fileID: 11400000, guid: 87bdfdd3d07881b4992cbacc02c03e7f, type: 2}
-  - {fileID: -118229684221580640, guid: 9a90e771df12bff4cad7e31ec1889e01, type: 2}
-  - {fileID: 4800000, guid: c9f956787b1d945e7b36e0516201fc76, type: 3}
-  - {fileID: 4800000, guid: 0945859e5a1034c2cb6dce53cb4fb899, type: 3}
+  bundleVersion: 2.0.0
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -158,7 +152,7 @@ PlayerSettings:
   vrSettings:
     enable360StereoCapture: 0
   isWsaHolographicRemotingEnabled: 0
-  enableFrameTimingStats: 0
+  enableFrameTimingStats: 1
   enableOpenGLProfilerGPURecorders: 1
   allowHDRDisplaySupport: 0
   useHDRDisplay: 0
